@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseInputCheckBox.vue should renders checked 1`] = `
+<input
+  class="accent-green-500"
+  data-cy="check-box"
+  type="checkbox"
+/>
+`;
