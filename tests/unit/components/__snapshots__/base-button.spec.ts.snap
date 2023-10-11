@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseButton.vue shloud be disabled 1`] = `
+<button
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 rounded focus:outline-none disabled:opacity-50 cursor-not-allowed hover:bg-green-500"
+  data-cy="submit"
+  disabled=""
+  type="submit"
+>
+  
+  
+</button>
+`;
+
+exports[`BaseButton.vue should render slot 1`] = `
+<button
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 rounded"
+  data-cy="submit"
+  type="submit"
+>
+  
+  slot example
+  
+</button>
+`;

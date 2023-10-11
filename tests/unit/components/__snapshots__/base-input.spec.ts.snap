@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseInput.vue should renders placeholder 1`] = `
+<input
+  class="w-full focus:outline-none m-1 ml-3"
+  data-cy="input"
+  placeholder="Place holder example"
+  type="text"
+/>
+`;
+
+exports[`BaseInput.vue should update v-model 1`] = `
+<input
+  class="w-full focus:outline-none m-1 ml-3"
+  data-cy="input"
+  placeholder=""
+  type="text"
+/>
+`;
