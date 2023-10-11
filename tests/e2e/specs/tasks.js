@@ -1,11 +1,22 @@
 // https://docs.cypress.io/api/table-of-contents
 import { randomNumberGenerate, diferentRandomNumber } from "../tools/index";
 
-describe("App", () => {
+describe("tasks", () => {
   const NUMBER_OF_TASKS = 5;
 
   beforeEach(() => {
-    cy.visit("/");
+    cy.getLocalStorage("tasks");
+
+    cy.visit("/tasks", {
+      onBeforeLoad(win) {
+        const user = {
+          passport: "aaaaaaa",
+          password: "aaaaaaaa",
+        };
+
+        win.localStorage.setItem("user", JSON.stringify(user));
+      },
+    });
   });
 
   it("should visits the app", () => {

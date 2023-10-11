@@ -39,3 +39,14 @@ Cypress.Commands.add("actTaskItem", (eq, action) => {
       });
     });
 });
+
+Cypress.Commands.add("login", () => {
+  cy.get("[data-cy=login-button]").should("be.disabled");
+
+  cy.get("[data-cy=passport-input]").type(`user teste`);
+  cy.get("[data-cy=password-input]").type(`1234`);
+
+  cy.get("[data-cy=login-button]").should("be.not.disabled");
+
+  cy.get("[data-cy=login-button]").click();
+});

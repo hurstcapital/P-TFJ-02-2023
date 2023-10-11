@@ -1,4 +1,6 @@
 {
   "pluginsFile": "tests/e2e/plugins/index.js",
-  "video": true
+  "videosFolder": "tests/e2e/videos",
+  "video": true,
+  "retries": 2
 }
