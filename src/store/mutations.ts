@@ -21,4 +21,8 @@ export const mutations: MutationTree<IState> & Mutations = {
     state.tasks = filtredTasks;
     localStorage.setItem("tasks", JSON.stringify(state.tasks));
   },
+  [IMutationType.SetUser](state, user) {
+    state.user = user;
+    localStorage.setItem("user", JSON.stringify(state.user));
+  },
 };

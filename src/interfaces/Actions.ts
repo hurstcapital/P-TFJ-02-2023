@@ -1,10 +1,12 @@
 import { ActionContext } from "vuex";
 import { IState } from "@/interfaces/State";
+import { IUser } from "@/interfaces/User";
 import { Mutations } from "@/interfaces/Mutations";
 
 export enum IActionTypes {
   GetTodoItems = "GET_ITEMS",
   SetTaskItems = "SET_ITEMS",
+  SetUser = "SET_USER",
 }
 
 type ActionAuguments = Omit<ActionContext<IState, IState>, "commit"> & {
@@ -15,6 +17,6 @@ type ActionAuguments = Omit<ActionContext<IState, IState>, "commit"> & {
 };
 
 export type Actions = {
-  [IActionTypes.GetTodoItems](context: ActionAuguments): void;
   [IActionTypes.SetTaskItems](context: ActionAuguments, payload: []): void;
+  [IActionTypes.SetUser](context: ActionAuguments, payload: IUser): void;
 };
